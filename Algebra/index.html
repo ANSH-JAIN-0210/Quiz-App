@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algebra</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Algebra</h1>
+        <p class="quiz-description">
+          Challenge your problem-solving skills with this quiz on algebraic
+          equations and expressions!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Algebra.<br />Select the
+          correct answer for each multiple-choice question.<br />Click "Submit"
+          after answering all questions to view your results.<br />Review total
+          questions, attempts, correct and incorrect answers, marks, and time
+          taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">
+            Question 1: What is the value of x in the equation 2x + 5 = 15?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q1" value="a" /> a) 5</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="b" /> b) 6</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="c" /> c) 7</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="d" /> d) 8</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">Question 2: Solve for x: 3x - 7 = 8</p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q2" value="a" /> a) 5</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="b" /> b) 6</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="c" /> c) 7</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="d" /> d) 8</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 3: Factorize the quadratic equation: x^2 + 5x + 6 = 0
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q3" value="a" /> a) (x + 2)(x +
+                3)</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="b" /> b) (x - 2)(x -
+                3)</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="c" /> c) (x + 1)(x +
+                6)</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="d" /> d) (x - 1)(x -
+                6)</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 4: Solve the inequality: 2x + 3 < 9
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q4" value="a" /> a) x < 3</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="b" /> b) x > 3</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="c" /> c) x < 6</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="d" /> d) x > 6</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 5: What is the value of x in the equation 4(x - 3) = 20?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q5" value="a" /> a) 4</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="b" /> b) 5</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="c" /> c) 6</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="d" /> d) 7</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

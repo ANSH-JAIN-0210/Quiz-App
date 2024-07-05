@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perimeter and Area</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Perimeter and Area</h1>
+        <p class="quiz-description">
+          Measure your geometric knowledge with this quiz on calculating
+          perimeters, areas, and volumes!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Perimeter and Area.<br />Select
+          the correct answer for each multiple-choice question.<br />Click
+          "Submit" after answering all questions to view your results.<br />Review
+          total questions, attempts, correct and incorrect answers, marks, and
+          time taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">
+            Question 1: What is the perimeter of a rectangle with length 6 cm
+            and width 4 cm?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q1" value="a" /> a) 20 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="b" /> b) 24 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="c" /> c) 30 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="d" /> d) 36 cm</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 2: What is the area of a square with side length 5 cm?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q2" value="a" /> a) 20 cm²</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="b" /> b) 25 cm²</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="c" /> c) 30 cm²</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="d" /> d) 35 cm²</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 3: What is the perimeter of an equilateral triangle with
+            each side 8 cm?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q3" value="a" /> a) 16 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="b" /> b) 24 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="c" /> c) 32 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="d" /> d) 40 cm</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 4: What is the area of a circle with radius 6 cm? (Take π =
+            3.14)
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q4" value="a" /> a) 113.04 cm²</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="b" /> b) 117.36 cm²</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="c" /> c) 125.6 cm²</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="d" /> d) 132.66 cm²</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 5: What is the perimeter of a square with each side 10 cm?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q5" value="a" /> a) 30 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="b" /> b) 35 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="c" /> c) 40 cm</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="d" /> d) 45 cm</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

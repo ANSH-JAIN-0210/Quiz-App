@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Badminton</h1>
+        <p class="quiz-description">
+            Challenge your badminton expertise with this quiz on players,
+            tournaments, and historic matches in the world of badminton!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Badminton.<br />Select the
+          correct answer for each multiple-choice question.<br />Click "Submit"
+          after answering all questions to view your results.<br />Review total
+          questions, attempts, correct and incorrect answers, marks, and time
+          taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">Question 1: Which country is considered the birthplace of modern badminton?</p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q1" value="a" /> a) China</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="b" /> b) India</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="c" /> c) England</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="d" /> d) Denmark</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">Question 2: How many points does a player need to win a game in badminton?</p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q2" value="a" /> a) 15</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="b" /> b) 21</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="c" /> c) 25</label>
+            </li>
+          </ul>
+            <li>
+              <label><input type="radio" name="q2" value="d" /> d) 30</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">Question 3: What is the maximum number of times a player can hit the shuttlecock before it must pass over the net?</p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q3" value="a" /> a) 1</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="b" /> b) 2r</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="c" /> c) 3</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="d" /> d) 4</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">Question 4: In badminton doubles, what is the correct order of serving?</p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q4" value="a" /> a) Player A -> Player B -> Player C -> Player D</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="b" /> b) Player A -> Player C -> Player B -> Player D</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="c" /> c) Player A -> Player D -> Player B -> Player C</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="d" /> d) Player A -> Player B -> Player D -> Player C</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">Question 5: Which type of shot is typically used to start a rally in badminton?</p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q5" value="a" /> a) Smash</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="b" /> b) Drop shot</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="c" /> c) Serve</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="d" /> d) Clear</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

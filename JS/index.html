@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">JAVASCRIPT</h1>
+        <p class="quiz-description">
+          Challenge your coding abilities with this quiz on JavaScript
+          functions, objects, and programming concepts!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on JavaScript.<br />Select
+          the correct answer for each multiple-choice question.<br />Click
+          "Submit" after answering all questions to view your results.<br />Review
+          total questions, attempts, correct and incorrect answers, marks, and
+          time taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">
+            Question 1: Inside which HTML element do we put the JavaScript?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q1" value="a" /> a)
+                &lt;scripting&gt;</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="b" /> b) &lt;js&gt;</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="c" /> c)
+                &lt;script&gt;</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="d" /> d)
+                &lt;javascript&gt;</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 2: Where is the correct place to insert a JavaScript?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q2" value="a" /> a) The &lt;head&gt;
+                section</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="b" /> b) The &lt;body&gt;
+                section</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="c" /> c) Both the
+                &lt;head&gt; and the &lt;body&gt; sections are correct</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="d" /> d) The
+                &lt;footer&gt; section</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 3: What is the correct syntax for referring to an external
+            script called "script.js"?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q3" value="a" /> a) &lt;script
+                src="script.js"&gt;</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="b" /> b) &lt;script
+                href="script.js"&gt;</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="c" /> c) &lt;script
+                name="script.js"&gt;</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="d" /> d) &lt;script
+                link="script.js"&gt;</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 4: How do you write "Hello World" in an alert box?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q4" value="a" /> a) msgBox("Hello
+                World");</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="b" /> b) alertBox("Hello
+                World");</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="c" /> c) msg("Hello
+                World");</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="d" /> d) alert("Hello
+                World");</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 5: How do you create a function in JavaScript?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q5" value="a" /> a)
+                function:myFunction()</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="b" /> b) function
+                myFunction()</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="c" /> c) function =
+                myFunction()</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="d" /> d) create function
+                myFunction()</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

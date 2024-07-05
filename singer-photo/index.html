@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Singer Name by Photo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Guess the Singer Name by Photo</h1>
+        <p class="quiz-description">
+          Test your music knowledge by identifying the artist from their
+          picture!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Guess the Singer Name by
+          Photo.<br />Select the correct answer for each multiple-choice
+          question.<br />Click "Submit" after answering all questions to view
+          your results.<br />Review total questions, attempts, correct and
+          incorrect answers, marks, and time taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+    </div>
+    
+    <div class="quiz-questions">
+        <div class="question">
+            <p class="question-text">Question 1: Identify the singer:</p>
+            <img src="../photo/singer-1.jpeg" alt="Singer 1 Photo">
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q1" value="a" /> a) Arijit Singh</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" value="b" /> b) Neha Kakkar</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" value="c" /> c) Atif Aslam</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" value="d" /> d) Armaan Malik</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 2: Identify the singer:</p>
+            <img src="../photo/singer-2.jpeg" alt="Singer 2 Photo">
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q2" value="a" /> a) Shreya Ghoshal</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" value="b" /> b) Jubin Nautiyal</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" value="c" /> c) Kanika Kapoor</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" value="d" /> d) Darshan Raval</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 3: Identify the singer:</p>
+            <img src="../photo/singer-3.jpeg" alt="Singer 3 Photo">
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q3" value="a" /> a) Guru Randhawa</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" value="b" /> b) Sunidhi Chauhan</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" value="c" /> c) Badshah</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" value="d" /> d) Yo Yo Honey Singh</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 4: Identify the singer:</p>
+            <img src="../photo/singer-4.jpeg" alt="Singer 4 Photo">
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q4" value="a" /> a) Sonu Nigam</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" value="b" /> b) Shalmali Kholgade</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" value="c" /> c) Vishal Dadlani</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" value="d" /> d) Benny Dayal</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 5: Identify the singer:</p>
+            <img src="../photo/singer-5.jpeg" alt="Singer 5 Photo">
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q5" value="a" /> a) Neha Bhasin</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" value="b" /> b) Mohit Chauhan</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" value="c" /> c) Raftaar</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" value="d" /> d) Shreya Goshal</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <button class="submit-btn">Submit</button>
+    
+    <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+    </div>
+    
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

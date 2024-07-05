@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art And Culture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Art And Culture</h1>
+        <p class="quiz-description">
+          Delve into the world of creativity with this quiz on famous artworks,
+          artists, and cultural movements!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Art and Culture.<br />Select
+          the correct answer for each multiple-choice question.<br />Click
+          "Submit" after answering all questions to view your results.<br />Review
+          total questions, attempts, correct and incorrect answers, marks, and
+          time taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">Question 1: Who painted the Mona Lisa?</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q1" value="a" /> a) Vincent van
+                Gogh</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="b" /> b) Leonardo da
+                Vinci</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="c" /> c) Pablo
+                Picasso</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="d" /> d)
+                Michelangelo</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 2: Which composer wrote the "Moonlight Sonata"?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q2" value="a" /> a) Ludwig van
+                Beethoven</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="b" /> b) Wolfgang Amadeus
+                Mozart</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="c" /> c) Johann Sebastian
+                Bach</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="d" /> d) Franz
+                Schubert</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 3: Which artist is known for his sculptures "David" and
+            "Pieta"?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q3" value="a" /> a) Auguste
+                Rodin</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="b" /> b)
+                Michelangelo</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="c" /> c) Donatello</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="d" /> d) Leonardo da
+                Vinci</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 4: Which playwright wrote "Romeo and Juliet"?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q4" value="a" /> a) William
+                Shakespeare</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="b" /> b) George Bernard
+                Shaw</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="c" /> c) Anton
+                Chekhov</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="d" /> d) Henrik
+                Ibsen</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 5: Who is the author of the novel "1984"?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q5" value="a" /> a) George
+                Orwell</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="b" /> b) Aldous
+                Huxley</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="c" /> c) Franz
+                Kafka</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="d" /> d) Fyodor
+                Dostoevsky</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

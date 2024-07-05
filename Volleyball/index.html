@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volleyball</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Volleyball</h1>
+        <p class="quiz-description">
+            Spike your knowledge with this engaging quiz on volleyball
+            players, rules, and memorable moments in volleyball history!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Volleyball.<br />Select the
+          correct answer for each multiple-choice question.<br />Click "Submit"
+          after answering all questions to view your results.<br />Review total
+          questions, attempts, correct and incorrect answers, marks, and time
+          taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+    </div>
+    
+    <div class="quiz-questions">
+        <div class="question">
+            <p class="question-text">Question 1: How many players are on a volleyball team on the court at one time?</p>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q1" value="a" /> a) 4</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" value="b" /> b) 5</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" value="c" /> c) 6</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" value="d" /> d) 7</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 2: What is the maximum number of touches per side in volleyball?</p>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q2" value="a" /> a) 2</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" value="b" /> b) 3</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" value="c" /> c) 4</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" value="d" /> d) 5</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 3: In volleyball, what is a 'dig'?</p>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q3" value="a" /> a) A type of serve</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" value="b" /> b) A defensive move to prevent the ball from hitting the ground</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" value="c" /> c) An offensive spike</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" value="d" /> d) A type of block</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 4: What is the height of the net in men's volleyball?</p>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q4" value="a" /> a) 2.24 meters</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" value="b" /> b) 2.43 meters</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" value="c" /> c) 2.55 meters</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" value="d" /> d) 2.37 meters</label>
+                </li>
+            </ul>
+        </div>
+        <div class="question">
+            <p class="question-text">Question 5: What term is used for a volleyball serve that lands on the opponent's court without being touched?</p>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="q5" value="a" /> a) Block</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" value="b" /> b) Spike</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" value="c" /> c) Ace</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" value="d" /> d) Dig</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <button class="submit-btn">Submit</button>
+    
+    <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+    </div>
+    
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

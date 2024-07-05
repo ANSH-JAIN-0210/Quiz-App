@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">History</h1>
+        <p class="quiz-description">
+          Travel through time with this quiz on significant events, historical
+          figures, and ancient civilizations!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on History.<br />Select the
+          correct answer for each multiple-choice question.<br />Click "Submit"
+          after answering all questions to view your results.<br />Review total
+          questions, attempts, correct and incorrect answers, marks, and time
+          taken.<br />
+        </p>
+      </div>
+
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">
+            Question 1: Who was the first President of the United States?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q1" value="a" /> a) George
+                Washington</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="b" /> b) Thomas
+                Jefferson</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="c" /> c) Abraham
+                Lincoln</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="d" /> d) John Adams</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 2: Which year did World War I begin?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q2" value="a" /> a) 1914</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="b" /> b) 1918</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="c" /> c) 1939</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="d" /> d) 1941</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 3: Who was the last emperor of Russia?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q3" value="a" /> a) Nicholas
+                II</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="b" /> b) Vladimir
+                Lenin</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="c" /> c) Joseph
+                Stalin</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="d" /> d) Leon
+                Trotsky</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 4: In which year did the Berlin Wall fall?
+          </p>
+          <ul class="choices">
+            <li>
+              <label><input type="radio" name="q4" value="a" /> a) 1989</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="b" /> b) 1991</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="c" /> c) 1975</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="d" /> d) 1990</label>
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 5: Who was the first man to walk on the moon?
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q5" value="a" /> a) Neil
+                Armstrong</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="b" /> b) Buzz
+                Aldrin</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="c" /> c) Alan
+                Shepard</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="d" /> d) John Glenn</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

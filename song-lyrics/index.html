@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Movie Name By Song lyrics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1 class="quiz-title">Guess the Movie Name By Song lyrics</h1>
+        <p class="quiz-description">
+          Prove your lyrical expertise by guessing the movie from its song
+          lyrics!
+        </p>
+        <p class="quiz-instructions">
+          Welcome to the Quiz! Test your knowledge on Guess the Movie Name By
+          song lyrics.<br />Select the correct answer for each multiple-choice
+          question.<br />Click "Submit" after answering all questions to view
+          your results.<br />Review total questions, attempts, correct and
+          incorrect answers, marks, and time taken.<br />
+        </p>
+      </div>
+      <div class="quiz-status">
+        <div class="question-count">Total Questions: 5</div>
+        <div class="timer">00:00</div>
+      </div>
+
+      <div class="quiz-questions">
+        <div class="question">
+          <p class="question-text">
+            Question 1: "Tujhe dekha to yeh jaana sanam, pyaar hota hai deewana
+            sanam."
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q1" value="a" /> a) Tum Mile</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="b" /> b) Dilwale Dulhania
+                Le Jayenge</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="c" /> c)
+                Mohabbatein</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="d" /> d) Jab Tak Hai
+                Jaan</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 2: "Pehla nasha, pehla khumaar, naya pyaar hai, naya
+            intezaar."
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q2" value="a" /> a) Jo Jeeta Wohi
+                Sikandar</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="b" /> b) Kuch Kuch Hota
+                Hai</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="c" /> c) Raja
+                Hindustani</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="d" /> d) Dil Chahta
+                Hai</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 3: "Tum paas aaye, yun muskuraye, tumne na jaane kya sapne
+            dikhaye."
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q3" value="a" /> a) Kuch Kuch Hota
+                Hai</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="b" /> b) Dilwale Dulhania
+                Le Jayenge</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="c" /> c) Kabhi Khushi
+                Kabhie Gham</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="d" /> d)
+                Mohabbatein</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 4: "Tumse milke dil ka hai jo haal kya kahein, ho gaya hai
+            kaisa yeh kamaal."
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q4" value="a" /> a) Aashiqui</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="b" /> b) Dilwale</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="c" /> c) Kaho Naa... Pyaar
+                Hai</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="d" /> d) Dil To Pagal
+                Hai</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            Question 5: "Kuch toh log kahenge, logon ka kaam hai kehna."
+          </p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="q5" value="a" /> a) Amar Prem</label
+              >
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="b" /> b) Anand</label>
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="c" /> c) Aradhana</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="d" /> d) Bawarchi</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="quiz-results" style="display: none">
+        <h2>Results</h2>
+        <p>Total Questions: <span class="total-questions"></span></p>
+        <p>Attempted Questions: <span class="attempted-questions"></span></p>
+        <p>Correct Answers: <span class="correct-answers"></span></p>
+        <p>Incorrect Answers: <span class="incorrect-answers"></span></p>
+        <p>Marks: <span class="marks"></span></p>
+        <p>Time Taken: <span class="time-taken"></span></p>
+      </div>
+
+      <button class="restart-btn" style="display: none">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
